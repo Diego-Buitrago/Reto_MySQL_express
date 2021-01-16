@@ -5,7 +5,8 @@ DROP TABLE IF EXISTS tipo_marca;
 CREATE TABLE vehiculos(
     nro_placa VARCHAR(10) PRIMARY KEY,
     id_linea INT(5) UNSIGNED NOT NULL,
-    modelo INTEGER(50) UNSIGNED, -- puede ser nulo no necesitamos el modelo para saver que veiculo es
+    modelo ENUM('2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012',
+    '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021') NOT NULL,
     fecha_ven_seguro DATE NOT NULL,
     fecha_ven_tecnomecanica DATE, --Puede ser nulo ya que si el veiculo esta nuevo no necesita tecnomecanica 
     fecha_ven_contrato DATE NOT NULL
