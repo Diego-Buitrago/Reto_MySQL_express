@@ -42,9 +42,12 @@ router.get('/linea/registros', (req, res) => {
     })
 });
 
-router.get('/linea/lineas', (req, res) => {
-    cnn_mysql.query(`SELECT desc_marca, desc_linea FROM tipo_linea INNER JOIN tipo_marca
-     ON tipo_linea.id_marca = tipo_marca.id_marca ORDER BY tipo_linea.id_marca`, (error, resulset, fields) => {
+router.get('/linea/cantidad', (req, res) => {
+    cnn_mysql.query(`SELECT tipo_marca.desc_marca, tipo_linea.desc_linea, COUNT(*) AS cantidad 
+    FROM tipo_marca 
+    INNER JOIN tipo_linea 
+    ON tipo_marca.id_marca = tipo_linea.id_marca 
+    GROUP BY tipo_marca.desc_marca, tipo_linea.desc_linea`, (error, resulset, fields) => {
         if (error) {
             return res.status(500).send('se presento un error en la base de datos.')
         } else {

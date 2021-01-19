@@ -185,7 +185,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5001/api/linea/lineas",
+					"raw": "http://localhost:5001/api/linea/cantidad",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -194,7 +194,7 @@
 					"path": [
 						"api",
 						"linea",
-						"lineas"
+						"cantidad"
 					]
 				}
 			},
