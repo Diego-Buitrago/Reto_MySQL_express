@@ -1,0 +1,7 @@
+Host = bc4xlzlwcat7jiq4ckhf-mysql.services.clever-cloud.com
+Database Name = bc4xlzlwcat7jiq4ckhf
+User = u8avd21ywh7qd0my
+Password = Riq9w4MmPs7UprFTr6PF
+Port = 3306
+Connection URI= mysql://u8avd21ywh7qd0my:Riq9w4MmPs7UprFTr6PF@bc4xlzlwcat7jiq4ckhf-mysql.services.clever-cloud.com:3306/bc4xlzlwcat7jiq4ckhf
+mysql CLI = mysql -h bc4xlzlwcat7jiq4ckhf-mysql.services.clever-cloud.com -P 3306 -u u8avd21ywh7qd0my -p bc4xlzlwcat7jiq4ckhf
