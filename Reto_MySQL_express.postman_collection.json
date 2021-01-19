@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:5001/api/marca",
+			"name": "http://localhost:5001/api/marca/insertar",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -36,7 +36,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5001/api/linea",
+			"name": "http://localhost:5001/api/linea/isertar",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -66,7 +66,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5001/api/vehiculos",
+			"name": "http://localhost:5001/api/vehiculos/insertar",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -180,7 +180,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:5001/api/linea/lineas",
+			"name": "http://localhost:5001/api/linea/cantidad",
 			"request": {
 				"method": "GET",
 				"header": [],
